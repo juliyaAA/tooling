@@ -1,0 +1,30 @@
+.card {
+    &__item {
+        position: relative;
+        z-index: 1;
+        margin-top: 12px;
+        display: block;
+        transition: color .3s ease-out;
+        letter-spacing: -0.01em;
+
+        img {
+            width: 18px;
+            height: 14px;
+            margin-right: 11px;
+        }
+    }
+    &__span {
+        text-decoration-line: underline;
+        &:hover {
+            color: $yellow;
+        }
+        &.active {
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: -0.01em;
+        }
+    }
+    &__num {
+        display: none;
+    }
+}

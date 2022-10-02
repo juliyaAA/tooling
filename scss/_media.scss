@@ -1,0 +1,191 @@
+@media (max-width: 1099px) {
+    .grey-block {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .burger {
+        display: block;
+        right: 35px;
+    }
+
+    .line-top {
+        border: none;
+    }
+    .product {
+        display: none;
+    }
+    .header {
+        &__left {
+            max-width: 90px;
+            margin-right: 0;
+        }
+
+        &__logo {
+            width: 65px;
+            height: 60px;
+        }
+
+        &__block {
+            height: 86px;
+        }
+
+        &__shop {
+            font-size: 12px;
+            line-height: 13px;
+        }
+        &__product {
+            height: 30px;
+            min-height: inherit;
+        }
+        &__nav {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            background-color: $white;
+            top: 0;
+            left: 0;
+            z-index: 15;
+            padding-left: 5%;
+            padding-top: 5%;
+            transform: translateX(-100%);
+            transition: transform .3s ease-in-out;
+
+            &.active {
+                transform: translateX(0);
+            }
+
+            .nav {
+                &__list {
+                    display: block;
+                    margin-right: 0;
+                    padding: 12px 5px;
+                }
+
+                &__link {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            .feature::before {
+                content: none;
+            }
+        }
+
+        &_flex_padding {
+            margin-top: 35px;
+            padding-left: 30px;
+        }
+    }
+    .card__item {
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 0;
+        img {
+            margin-right: 5px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        &__menu {
+        background-color: #252525;
+        }
+        &__catalog {
+            display: block;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 34px;
+        }
+    }
+    .menu-product {
+        position: absolute;
+        width: 100%;
+        top: 41px;
+        max-height: 0;
+        z-index: 10;
+        left:0;
+        margin:0;
+        padding:0;
+        max-height:0px;
+        overflow:hidden;
+        transition:max-height 0.4s linear;
+        &__list {
+            display: block;
+        }
+        &__nav {
+            padding: 50px 25px;
+        }
+        &.active {
+            max-height: 400px;
+        }
+    }
+}
+@media (max-width: 550px) {
+    .header {
+        &__wrapper {
+            display: block;
+        }
+        &_flex_padding {
+            margin-top: 0;
+            padding-left: 0;
+            padding-top: 5px;
+            justify-content: end;
+        }
+        &__left {
+            max-width: 70px;
+        }
+        &__block {
+            height: 69px;
+        }
+        &__logo {
+            width: 40px;
+            height: 40px;
+        }
+        &__product {
+            height: inherit;
+        }
+        &__inner {
+            display: none;
+        }
+        &__phone {
+            margin-top: 5px;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: right;
+        }
+    }
+    .burger {
+        right: 20px;
+    }
+    .card {
+        position: absolute;
+        right: 23px;
+        top: 25%;
+        &__item {
+            position: relative;
+        }
+        &__span {
+            display: none;
+        }
+        &__num {
+            display: block;
+            border-radius: 50%;
+            background-color: $yellow;
+            color: $black;
+            font-weight: 700;
+            position: absolute;
+            right: -9px;
+            top: -10px;
+            padding: 2px 5px;
+            font-size: 10px;
+        }
+    }
+}

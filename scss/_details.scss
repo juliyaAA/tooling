@@ -1,0 +1,21 @@
+.details {
+    cursor: pointer;
+    position: relative;
+    &__wrap {
+        position: absolute;
+        width: 85px;
+        right: 2%;
+        background-color: $white;
+        z-index: 10;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+        p {
+            margin-top: 5px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

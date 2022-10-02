@@ -1,0 +1,137 @@
+.header {
+    padding-top: 19px;
+    padding-bottom: 87px;
+    position: relative;
+    &__left {
+        max-width: 210px;
+        width: 100%;
+        margin-right: 10px;
+    }
+    &__block {
+        width: 100%;
+        height: 111px;
+        background-color: $yellow;
+        position: relative;
+        display: block;
+    }
+    &__logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 94px;
+        height: 84px;
+    }
+    &__shop {
+        font-family: 'HeliosCond', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $black;
+        text-align: center;
+        margin-top: 8px;
+    }
+    &_flex {
+        display: flex;
+        justify-content: space-between;
+        &_padding {
+            padding-top: 18px;
+        }
+    }
+    &__right {
+        max-width: 930px;
+        width: 100%;
+    }
+    &__nav {
+        padding-bottom: 8px;
+    }
+    &__product {
+        max-width: 407px;
+        width: 100%;
+        min-height: 70px;
+    }
+    &__info {
+        width: 184px;
+    }
+    &__work {
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        padding-right: 10px;
+    }
+    &__phone {
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 29px;
+        letter-spacing: -0.02em;
+        display: block;
+        transition: color .3s ease-out;
+        &:hover {
+            color: $yellow;
+        }
+    }
+    &__inner {
+        margin-top: 11px;
+        padding-top: 4px;
+    }
+   
+    &__sity {
+        letter-spacing: -0.01em;
+        padding-right: 10px;
+    } 
+    &__catalog {
+        display: none;
+    }
+    &__menu {
+        width: 100%;
+        min-height: 34px;
+        // overflow: hidden;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin-top: 26px;
+        position: relative;
+    } 
+    &__search {
+        width: 40px;
+        position: relative;
+        background-color: $yellow;
+        z-index: 1;
+        cursor: pointer;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        &::before {
+            content: '';
+            background-image: url('../img/icons/search.svg');
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__selling {
+        position: relative;
+        background-color: $yellow;
+        width: 127px;
+        padding-left: 12px;
+        padding-right: 13px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    &__sale {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 34px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+    }
+}

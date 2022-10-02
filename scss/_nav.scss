@@ -1,0 +1,17 @@
+.nav {
+    &__list {
+        display: inline-block;
+        margin-right: 25px;
+       
+        &:last-child {
+            margin-right: 0;
+        } 
+    }
+    &__link {
+        transition: color .3s ease-out;
+        letter-spacing: -0.01em;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
